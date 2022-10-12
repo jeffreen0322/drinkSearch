@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" text="style/css" href="style.css" />
+    <script src="./style.js"></script>
+    <title>hackReviews</title>
+  </head>
+  <body>
+    
+    <h1>drinkSearch</h1>
+    <h2>Purpose</h2>
+
+    <p id="purpose_p">
+      This website is designed to show the amount of beverage places in your area! Please turn on location as this 
+      website will require it to find establishments.
+    </p>
+
+    <div class="container-page">
+      <div class="left-side">
+        <div class="left-top"></div>
+        <div id="left-bot"></div>
+      </div>
+      <div class="outer-box">
+        <div class="search-tools">
+          <div class="location-tools">
+            <input
+              id="location"
+              class="controls"
+              type="text"
+              placeholder="Enter a Location"
+            />
+            <select name="filters" id="filters">
+              <option value="alcohol">Alcohol</option>
+              <option value="boba">Boba</option>
+              <option value="coffee">Coffee</option>
+              <option value="tea">Tea</options>
+            </select>
+            <button onclick="searchFunc()">Search</button>
+          </div>
+          <div id="map">
+            <script src="/drinkSearch/style.js"></script>
+            <script
+              async
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAwBPecFmf0co-0ua1pg2tA4wXMfIn3R4&libraries=places&callback=initMap"
+            ></script>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div id="right-top"></div>
+        <div id="right-bot"></div>
+      </div>
+    </div>
+  </body>
+</html>

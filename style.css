@@ -1,0 +1,89 @@
+body {
+  background-color: #84daea;
+}
+
+h1 {
+  text-align: center;
+  border-style: double;
+
+  background-color: #b8b8b1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-page {
+  display: flex;
+  justify-content: center;
+}
+
+.location-tools {
+  display: flex;
+  justify-content: center;
+}
+
+.outer-box {
+  background-image: url(./bevBG.jpg);
+  padding: 50px;
+  margin: 25px;
+}
+
+.left-side {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgb(168, 198, 224);
+}
+
+.right-side {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgb(168, 198, 224);
+}
+
+#keyword {
+  font-family: "FreeMono", monospace;
+  height: 27px;
+  width: 350px;
+}
+
+#location {
+  font-family: "FreeMono", monospace;
+  height: 25px;
+  width: 350px;
+  margin-right: 5px;
+}
+
+#filters {
+  height: 31px;
+  margin-right: 5px;
+}
+
+#purpose_p {
+  margin-left: 250px;
+  margin-right: 250px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#map {
+  margin-top: 10px;
+  height: 700px;
+  width: 850px;
+  visibility: visible;
+}
+
+#map_text {
+  text-align: center;
+}
+
+#map_text2 {
+  visibility: collapse;
+}
